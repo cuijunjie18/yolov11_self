@@ -1,0 +1,8 @@
+train: E:\Projecct\ultralytics\data\animals_data\cut\images\train  # train images (relative to 'path') 128 images
+val: E:\Projecct\ultralytics\data\animals_data\cut\images\val  # val images (relative to 'path') 128 images
+test: E:\Projecct\ultralytics\data\animals_data\cut\images\test
+ 
+nc: 2
+ 
+# Classes
+names: ['cat','dog']
