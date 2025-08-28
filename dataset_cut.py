@@ -12,7 +12,7 @@ def split_dataset(image_dir, label_dir, output_dir, train_ratio=0.7, val_ratio=0
     os.makedirs(os.path.join(output_dir, "labels", "test"), exist_ok=True)
 
     # 获取所有图像文件
-    image_files = [f for f in os.listdir(image_dir) if f.endswith(".jpg")]
+    image_files = [f for f in os.listdir(image_dir) if f.endswith(".jpg")] # 注意这里是jpg
     random.shuffle(image_files)
 
     # 计算划分点
@@ -35,7 +35,7 @@ def split_dataset(image_dir, label_dir, output_dir, train_ratio=0.7, val_ratio=0
         shutil.copy(os.path.join(label_dir, label_file), os.path.join(output_dir, "labels", subset, label_file))
 
 # 示例：划分数据集
-image_dir = "data/bbu_ground_bbu/raw_images"
-label_dir = "data/bbu_ground_bbu/raw_labels"
-output_dir = "data/bbu_ground_bbu"
+image_dir = "data/cpri/raw_images"
+label_dir = "data/cpri/raw_labels"
+output_dir = "data/cpri"
 split_dataset(image_dir, label_dir, output_dir)
