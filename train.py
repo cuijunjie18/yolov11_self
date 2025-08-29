@@ -2,7 +2,7 @@ import warnings
 warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 if __name__ == '__main__':
-	model = YOLO('ultralytics/cfg/models/11/yolo11.yaml')   # 修改yaml
+	model = YOLO('ultralytics/cfg/models/11/yolo11x.yaml')   # 修改yaml
 	model.load('my_install_model/yolo11x.pt')  #加载预训练权重
 	model.train(data='data/cpri/data.yaml',   #数据集yaml文件
 	            imgsz=640,

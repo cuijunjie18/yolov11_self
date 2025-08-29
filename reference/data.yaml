@@ -1,0 +1,8 @@
+train: /data_all/cjj_node/ultralytics/data/cpri/images/train  # train images (relative to 'path') 128 images
+val: /data_all/cjj_node/ultralytics/data/cpri/images/val  # val images (relative to 'path') 128 images
+test: /data_all/cjj_node/ultralytics/data/cpri/images/test
+ 
+nc: 4
+ 
+# Classes
+names: ['cpri', 'power', 'cap_not_screw', 'cap_screw']

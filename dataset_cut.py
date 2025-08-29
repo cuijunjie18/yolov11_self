@@ -35,7 +35,7 @@ def split_dataset(image_dir, label_dir, output_dir, train_ratio=0.7, val_ratio=0
         shutil.copy(os.path.join(label_dir, label_file), os.path.join(output_dir, "labels", subset, label_file))
 
 # 示例：划分数据集
-image_dir = "data/cpri/raw_images"
-label_dir = "data/cpri/raw_labels"
-output_dir = "data/cpri"
+image_dir = "data/CPRI_coco_dataset/raw_images"
+label_dir = "data/CPRI_coco_dataset/raw_labels"
+output_dir = "data/CPRI_coco_dataset"
 split_dataset(image_dir, label_dir, output_dir)
